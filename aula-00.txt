@@ -1,0 +1,10 @@
+comandos:
+git init
+git config --local user.name "Arthur Davel"
+git config --local user.email "arthurdavelvb@gmail.com"
+git status
+git push -u origin master
+
+-- quando necessário
+git config credential.username "Arthur Davel"
+...
