@@ -5,7 +5,7 @@ const resp2 = document.querySelector("#outPromo");
 frm.addEventListener("submit", (e)=>{
     //entrada de dados
     const med = frm.inMed.value;
-    const preco = Number(frm.inPreco.value.replace(",",".")); //testando compatibilidade com vírgula
+    const preco = frm.inPreco.value; //testando compatibilidade com vírgula
     //processamento
     const valor = Math.floor(preco)*2;
     //saídas
