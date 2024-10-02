@@ -3,8 +3,8 @@ const resp = document.querySelector("#outValor");
 
 frm.addEventListener("submit", (e)=>{
     //entrada de dados
-    const preco = frm.inPreco.value;
-    const tempo = frm.inTempo.value;
+    const preco = Number(frm.inPreco.value);
+    const tempo = Number(frm.inTempo.value);
     //processamento
     const valor = (preco*Math.ceil(tempo/15)).toFixed(2);
     //saídas

@@ -6,7 +6,7 @@ const resp3 = document.querySelector("#outParcelas");
 frm.addEventListener("submit", (e)=>{
     //entrada de dados
     const titulo = frm.inVeiculo.value;
-    const preco = frm.inPreco.value;
+    const preco = Number(frm.inPreco.value);
     //processamento
     const entrada = preco*.5;
     const parcelas = (preco-entrada)/12;
