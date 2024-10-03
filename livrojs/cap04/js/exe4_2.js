@@ -6,3 +6,6 @@ function calcular(){
     document.querySelector("#outPeso").innerText = `${nome}: Seu peso ideal é ${peso.toFixed(2)} kg`;
     return false; //impede o refresh
 }
+function limpar(){
+    document.querySelector("#outPeso").innerText = "";
+}
