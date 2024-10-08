@@ -12,11 +12,11 @@ function calcular(){
         if(ladoA==ladoB && ladoB==ladoC){
             tipo="Equilátero";
         }
-        else if((ladoA==ladoB && ladoB!=ladoC) || (ladoB==ladoC && ladoB!=ladoA) || (ladoA==ladoC && ladoA!=ladoB)){
-            tipo="Isósceles";
+        else if(ladoA!=ladoB && ladoB!=ladoC && ladoA!=ladoC){
+            tipo="Escaleno";
         }
         else{
-            tipo="Escaleno";
+            tipo="Isósceles";
         }
         document.querySelector("#outResp").innerText = "Lados podem formar um triângulo";
         document.querySelector("#outTipo").innerText = `Tipo: ${tipo}`;
