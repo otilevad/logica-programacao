@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Lista</title>
+    <style>
+        td{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerenciamento de Lista</h1>
+    <form id="formLista">
+        <p>
+            ID: <input type="number" id="inId" disabled>
+        </p>
+        <p>
+            Item: <input type="text" id="inItem" required>
+        </p>
+        <input type="submit" value="Gravar" id="inGravar">
+        <input type="submit" value="Apagar" id="inApagar" onclick="apagar()">
+        <input type="reset" value="Novo">
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="js/lista.js"></script>
+</body>
+</html>
